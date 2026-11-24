@@ -1,0 +1,4 @@
+# Core chatbot: Python standard library only (no third-party runtime dependencies).
+# Optional notebook interface:
+notebook>=7.0,<8.0
+ipykernel>=6.0,<7.0

@@ -1,0 +1,9 @@
+[
+  {"question": "How is a tuple different from a list?", "expected_topic": "Lists versus tuples"},
+  {"question": "Explain an anonymous function in Python", "expected_topic": "Lambda functions"},
+  {"question": "How do I catch runtime errors?", "expected_topic": "Exceptions"},
+  {"question": "How can I get an index and item while looping?", "expected_topic": "Enumerate"},
+  {"question": "How do I save text to a file?", "expected_topic": "File reading and writing"},
+  {"question": "What does __name__ equal when running a script?", "expected_topic": "Main guard"},
+  {"question": "Who won the football world cup in 1998?", "expected_topic": null}
+]

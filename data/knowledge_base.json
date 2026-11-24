@@ -1,0 +1,782 @@
+[
+  {
+    "id": "PY001",
+    "topic": "What is Python?",
+    "question": "What is Python?",
+    "alternate_questions": [
+      "Explain the Python programming language",
+      "What do people use Python for?",
+      "Give me an introduction to Python"
+    ],
+    "keywords": [
+      "python",
+      "programming language",
+      "interpreted",
+      "general purpose",
+      "readable"
+    ],
+    "answer": "Python is a general-purpose programming language designed to make code readable. It is commonly used for automation, web development, data analysis, scientific work, education, and many other tasks. A Python program is usually saved in a file ending in .py and executed by a Python interpreter."
+  },
+  {
+    "id": "PY002",
+    "topic": "Variables",
+    "question": "What is a variable in Python?",
+    "alternate_questions": [
+      "How do I store a value in Python?",
+      "How do variables work?",
+      "What does assignment mean in Python?"
+    ],
+    "keywords": [
+      "variable",
+      "assignment",
+      "name",
+      "store",
+      "value",
+      "equals"
+    ],
+    "answer": "A variable is a name that refers to a value. You create or update a variable with assignment, for example: age = 20. Python determines the value's type at runtime, so you do not write a type declaration for an ordinary variable. Choose descriptive names such as total_marks rather than unclear names such as x when possible."
+  },
+  {
+    "id": "PY003",
+    "topic": "Python data types",
+    "question": "What are the common data types in Python?",
+    "alternate_questions": [
+      "Explain int float string and boolean",
+      "What kinds of values can Python store?",
+      "Name basic Python types"
+    ],
+    "keywords": [
+      "data types",
+      "int",
+      "integer",
+      "float",
+      "str",
+      "string",
+      "bool",
+      "boolean",
+      "list",
+      "tuple",
+      "dict",
+      "dictionary",
+      "set"
+    ],
+    "answer": "Common built-in Python types include int for whole numbers, float for decimal numbers, str for text, and bool for True or False values. Python also provides collection types: list (ordered and mutable), tuple (ordered and immutable), dict (key-value mapping), and set (collection of distinct items). Use type(value) to inspect an object's type."
+  },
+  {
+    "id": "PY004",
+    "topic": "Strings",
+    "question": "What is a string in Python?",
+    "alternate_questions": [
+      "How do I store text?",
+      "How do quotation marks create text in Python?",
+      "Explain string values"
+    ],
+    "keywords": [
+      "string",
+      "str",
+      "text",
+      "quotes",
+      "characters",
+      "immutable"
+    ],
+    "answer": "A string (str) is a sequence of text characters. You can write one with single quotes or double quotes, for example: name = 'Asha'. Triple quotes can hold text across multiple lines. Strings are immutable, which means an operation creates a new string rather than changing the original string in place."
+  },
+  {
+    "id": "PY005",
+    "topic": "Lists",
+    "question": "What is a list in Python?",
+    "alternate_questions": [
+      "How can I keep several values together?",
+      "How do I create a list?",
+      "Are Python lists changeable?"
+    ],
+    "keywords": [
+      "list",
+      "collection",
+      "ordered",
+      "mutable",
+      "append",
+      "index",
+      "items"
+    ],
+    "answer": "A list is an ordered, mutable collection that can hold multiple values. Create one with square brackets: colours = ['red', 'blue']. Indexing starts at zero, so colours[0] is 'red'. Use append(value) to add an item, remove(value) to remove a matching item, and len(colours) to count items."
+  },
+  {
+    "id": "PY006",
+    "topic": "Tuples",
+    "question": "What is a tuple in Python?",
+    "alternate_questions": [
+      "Can tuple values be changed after creation?",
+      "What does an immutable sequence mean?",
+      "Explain tuple syntax"
+    ],
+    "keywords": [
+      "tuple",
+      "immutable",
+      "ordered",
+      "parentheses",
+      "sequence",
+      "list comparison"
+    ],
+    "answer": "A tuple is an ordered collection that cannot be reassigned item by item after it is created. A common way to write one is point = (4, 7). Tuples are useful when a group of values should remain fixed. A one-item tuple needs a trailing comma, for example: single = (5,)."
+  },
+  {
+    "id": "PY007",
+    "topic": "Lists versus tuples",
+    "question": "What is the difference between a list and a tuple?",
+    "alternate_questions": [
+      "Compare list and tuple",
+      "When should I use a tuple instead of a list?",
+      "Are lists mutable but tuples immutable?"
+    ],
+    "keywords": [
+      "list",
+      "tuple",
+      "difference",
+      "mutable",
+      "immutable",
+      "square brackets",
+      "parentheses"
+    ],
+    "answer": "Both lists and tuples are ordered sequences. A list is mutable, so its items can be added, removed, or replaced; it is written with square brackets, such as [2, 4]. A tuple is immutable after creation and is commonly written with parentheses, such as (2, 4). Choose a list for changing collections and a tuple for fixed groups of values."
+  },
+  {
+    "id": "PY008",
+    "topic": "Dictionaries",
+    "question": "What is a dictionary in Python?",
+    "alternate_questions": [
+      "How do key value pairs work?",
+      "How do I create a dict?",
+      "How can I look up a value by a key?"
+    ],
+    "keywords": [
+      "dictionary",
+      "dict",
+      "key",
+      "value",
+      "mapping",
+      "key value pair",
+      "lookup"
+    ],
+    "answer": "A dictionary (dict) stores key-value pairs. For example: student = {'name': 'Ravi', 'mark': 85}. The key 'name' retrieves the value with student['name']. Keys must be hashable and unique within the dictionary. Use get(key) when you want a lookup that can return a default instead of raising a KeyError for a missing key."
+  },
+  {
+    "id": "PY009",
+    "topic": "Sets",
+    "question": "What is a set in Python?",
+    "alternate_questions": [
+      "How do I store unique values?",
+      "What is the use of set?",
+      "How can I remove duplicates from a list?"
+    ],
+    "keywords": [
+      "set",
+      "unique",
+      "duplicates",
+      "unordered",
+      "union",
+      "intersection"
+    ],
+    "answer": "A set is a collection of distinct, hashable values. It is useful for removing duplicates and testing membership. Create a non-empty set with braces, for example: colours = {'red', 'blue'}. Use set([1, 1, 2]) to create {1, 2}. Sets support operations such as union (|), intersection (&), and difference (-)."
+  },
+  {
+    "id": "PY010",
+    "topic": "If statements",
+    "question": "How do if statements work in Python?",
+    "alternate_questions": [
+      "How can my program make a decision?",
+      "Explain if elif and else",
+      "How do I check a condition?"
+    ],
+    "keywords": [
+      "if",
+      "elif",
+      "else",
+      "condition",
+      "decision",
+      "branching",
+      "indentation"
+    ],
+    "answer": "An if statement runs a block only when its condition is true. Use elif for another condition and else for the remaining case. Example: if score >= 50: print('Pass') else: print('Try again'). The statements belonging to each branch are identified by indentation, not braces."
+  },
+  {
+    "id": "PY011",
+    "topic": "For loops",
+    "question": "How does a for loop work in Python?",
+    "alternate_questions": [
+      "How do I repeat an action for each item?",
+      "Explain iteration over a list",
+      "How can I loop through a sequence?"
+    ],
+    "keywords": [
+      "for",
+      "loop",
+      "iteration",
+      "iterable",
+      "range",
+      "repeat"
+    ],
+    "answer": "A for loop visits the items of an iterable one at a time. Example: for colour in ['red', 'blue']: print(colour). Use range(n) when you need a sequence of integers, commonly from 0 up to but not including n. Indent the loop body so Python knows which statements should repeat."
+  },
+  {
+    "id": "PY012",
+    "topic": "While loops",
+    "question": "How does a while loop work in Python?",
+    "alternate_questions": [
+      "How can I repeat code while a condition is true?",
+      "What is a condition controlled loop?",
+      "When should I use while?"
+    ],
+    "keywords": [
+      "while",
+      "loop",
+      "condition",
+      "repeat",
+      "iteration",
+      "infinite loop"
+    ],
+    "answer": "A while loop repeats its indented body as long as its condition evaluates to true. For example, while count < 3: print(count); count += 1. Make sure the loop can eventually reach a false condition, or use a deliberate break, otherwise it may run forever."
+  },
+  {
+    "id": "PY013",
+    "topic": "Break and continue",
+    "question": "What is the difference between break and continue?",
+    "alternate_questions": [
+      "How do I stop a loop early?",
+      "How can I skip one loop iteration?",
+      "Explain break versus continue"
+    ],
+    "keywords": [
+      "break",
+      "continue",
+      "loop",
+      "stop",
+      "skip",
+      "iteration"
+    ],
+    "answer": "break exits the nearest enclosing loop immediately. continue skips the rest of the current iteration and moves to the next iteration. Use break when the loop's task is complete, and continue when one item should be skipped but the loop should carry on."
+  },
+  {
+    "id": "PY014",
+    "topic": "Functions",
+    "question": "How do I define a function in Python?",
+    "alternate_questions": [
+      "What is a function?",
+      "How can I reuse a block of code?",
+      "Explain def and return"
+    ],
+    "keywords": [
+      "function",
+      "def",
+      "parameter",
+      "argument",
+      "return",
+      "reusable"
+    ],
+    "answer": "Define a function with def, followed by its name, parentheses, and a colon. Example: def add(a, b): return a + b. The indented body contains the function's work. Parameters are names in the definition; arguments are the values supplied when the function is called. return sends a result back to the caller."
+  },
+  {
+    "id": "PY015",
+    "topic": "Parameters and arguments",
+    "question": "What is the difference between a parameter and an argument?",
+    "alternate_questions": [
+      "Explain function parameters",
+      "What values do I pass to a function?",
+      "How are function inputs named?"
+    ],
+    "keywords": [
+      "parameter",
+      "argument",
+      "function",
+      "input",
+      "call",
+      "default"
+    ],
+    "answer": "A parameter is a variable listed in a function definition, such as name in def greet(name). An argument is the actual value passed when calling the function, such as 'Mira' in greet('Mira'). Python supports positional arguments, keyword arguments, and parameters with default values."
+  },
+  {
+    "id": "PY016",
+    "topic": "Lambda functions",
+    "question": "What is a lambda function in Python?",
+    "alternate_questions": [
+      "How do I create an anonymous function?",
+      "Explain lambda syntax",
+      "Can I write a small function in one expression?"
+    ],
+    "keywords": [
+      "lambda",
+      "anonymous",
+      "function",
+      "expression",
+      "short",
+      "key"
+    ],
+    "answer": "A lambda expression creates a small anonymous function containing one expression. For example: square = lambda number: number * number. Calling square(4) returns 16. A normal def function is usually clearer for multi-step logic, meaningful documentation, or reusable operations."
+  },
+  {
+    "id": "PY017",
+    "topic": "Recursion",
+    "question": "What is recursion in Python?",
+    "alternate_questions": [
+      "What is a recursive function?",
+      "How can a function call itself?",
+      "Why does recursion need a base case?"
+    ],
+    "keywords": [
+      "recursion",
+      "recursive",
+      "function",
+      "base case",
+      "self call",
+      "stack"
+    ],
+    "answer": "Recursion occurs when a function calls itself to solve a smaller version of a problem. A recursive function needs a base case that stops the calls. Without a reachable base case, calls continue until Python raises RecursionError. Recursion can be elegant for tree-like problems, although an iterative loop may use less call-stack space."
+  },
+  {
+    "id": "PY018",
+    "topic": "List comprehensions",
+    "question": "What is a list comprehension?",
+    "alternate_questions": [
+      "How can I build a list in one line?",
+      "Explain the square bracket loop syntax",
+      "How do I transform items into a new list?"
+    ],
+    "keywords": [
+      "list comprehension",
+      "comprehension",
+      "for",
+      "if",
+      "transform",
+      "filter"
+    ],
+    "answer": "A list comprehension builds a new list from an iterable, optionally filtering items. Example: squares = [number * number for number in range(5)]. With a condition: evens = [number for number in range(10) if number % 2 == 0]. Use an ordinary loop when the comprehension becomes difficult to read."
+  },
+  {
+    "id": "PY019",
+    "topic": "Object-oriented programming",
+    "question": "What is object-oriented programming in Python?",
+    "alternate_questions": [
+      "Explain OOP",
+      "What are objects and classes?",
+      "How does Python organize code around objects?"
+    ],
+    "keywords": [
+      "object oriented programming",
+      "oop",
+      "class",
+      "object",
+      "attribute",
+      "method"
+    ],
+    "answer": "Object-oriented programming (OOP) organizes programs around objects that combine data and behaviour. A class describes how objects of a kind are created; an object is an instance of a class. Attributes store information on an object, while methods are functions defined in a class."
+  },
+  {
+    "id": "PY020",
+    "topic": "Classes and objects",
+    "question": "What is the difference between a class and an object?",
+    "alternate_questions": [
+      "How do I create an object from a class?",
+      "Explain class versus instance",
+      "What does instantiate mean?"
+    ],
+    "keywords": [
+      "class",
+      "object",
+      "instance",
+      "instantiate",
+      "blueprint",
+      "attribute"
+    ],
+    "answer": "A class is a definition that describes data and behaviour for a type of object. An object (also called an instance) is a particular value created from that class. For example, class Student: ... defines the class, and learner = Student() creates an instance. Different instances can hold different attribute values."
+  },
+  {
+    "id": "PY021",
+    "topic": "The init method",
+    "question": "What is the __init__ method in Python?",
+    "alternate_questions": [
+      "How do I initialise an object?",
+      "What is a class constructor method?",
+      "Why is self used in init?"
+    ],
+    "keywords": [
+      "__init__",
+      "init",
+      "initialise",
+      "constructor",
+      "class",
+      "self",
+      "instance"
+    ],
+    "answer": "__init__ is a special method Python calls after a new instance has been created. It commonly assigns starting attributes, for example: def __init__(self, name): self.name = name. The first parameter is conventionally named self and refers to the instance being initialised."
+  },
+  {
+    "id": "PY022",
+    "topic": "Inheritance",
+    "question": "What is inheritance in Python?",
+    "alternate_questions": [
+      "How can one class reuse another class?",
+      "What are parent and child classes?",
+      "Explain derived classes"
+    ],
+    "keywords": [
+      "inheritance",
+      "parent",
+      "child",
+      "base class",
+      "derived class",
+      "super"
+    ],
+    "answer": "Inheritance lets a new class reuse and extend behaviour from an existing class. The existing class is often called the base or parent class; the new one is the derived or child class. Example: class SavingsAccount(Account): ... . The child can add methods or override inherited methods. super() can be used to call behaviour from the next class in the method resolution order."
+  },
+  {
+    "id": "PY023",
+    "topic": "Exceptions",
+    "question": "What is exception handling in Python?",
+    "alternate_questions": [
+      "How do I handle runtime errors?",
+      "Explain try except",
+      "How can a program recover from an error?"
+    ],
+    "keywords": [
+      "exception",
+      "error",
+      "try",
+      "except",
+      "finally",
+      "raise",
+      "handling"
+    ],
+    "answer": "Exception handling lets a program respond to errors that occur while it runs. Put code that may fail inside try and handle selected error types with except. An optional else block runs when no exception occurred, and finally runs whether or not an exception occurred. Catch specific exceptions where possible instead of hiding every problem with a broad except."
+  },
+  {
+    "id": "PY024",
+    "topic": "Common Python errors",
+    "question": "What are common Python errors?",
+    "alternate_questions": [
+      "What does TypeError or ValueError mean?",
+      "Explain NameError IndexError and KeyError",
+      "Why does Python show a traceback?"
+    ],
+    "keywords": [
+      "TypeError",
+      "ValueError",
+      "NameError",
+      "IndexError",
+      "KeyError",
+      "SyntaxError",
+      "traceback"
+    ],
+    "answer": "Common errors include SyntaxError for invalid syntax, NameError for a name that is not defined, TypeError for an operation or function call using an unsuitable type, ValueError when a value has the right general type but is unacceptable, IndexError for an invalid sequence index, and KeyError for a missing dictionary key. Read the traceback from the bottom to find the exception and the line where it occurred."
+  },
+  {
+    "id": "PY025",
+    "topic": "File reading and writing",
+    "question": "How do I read and write a file in Python?",
+    "alternate_questions": [
+      "How can I open a text file?",
+      "Explain the with open pattern",
+      "How do I save text to a file?"
+    ],
+    "keywords": [
+      "file",
+      "read",
+      "write",
+      "open",
+      "with",
+      "encoding",
+      "close"
+    ],
+    "answer": "Use open(path, mode, encoding='utf-8') to access a file. Read with mode 'r' and write with mode 'w'; mode 'a' appends. Prefer a context manager: with open('notes.txt', 'r', encoding='utf-8') as file: text = file.read(). The with block closes the file automatically, including when an error occurs."
+  },
+  {
+    "id": "PY026",
+    "topic": "Modules",
+    "question": "What is a module in Python?",
+    "alternate_questions": [
+      "How do I import code from another file?",
+      "Explain Python modules",
+      "What does import do?"
+    ],
+    "keywords": [
+      "module",
+      "import",
+      "file",
+      "reuse",
+      "namespace",
+      "library"
+    ],
+    "answer": "A module is a Python file that can define functions, classes, and values for reuse. Use import module_name to access its contents, or from module_name import item to import a particular name. Keep related code together in modules to make larger programs easier to maintain."
+  },
+  {
+    "id": "PY027",
+    "topic": "Packages",
+    "question": "What is a Python package?",
+    "alternate_questions": [
+      "How are Python modules grouped?",
+      "What is the difference between module and package?",
+      "Explain package folders"
+    ],
+    "keywords": [
+      "package",
+      "module",
+      "folder",
+      "directory",
+      "__init__",
+      "organise"
+    ],
+    "answer": "A package groups related Python modules in a directory hierarchy. A regular package commonly contains an __init__.py file, although Python also supports namespace packages. Packages help organise code into meaningful parts and avoid putting every function in one large file."
+  },
+  {
+    "id": "PY028",
+    "topic": "Virtual environments",
+    "question": "What is a Python virtual environment?",
+    "alternate_questions": [
+      "Why should I create a venv?",
+      "How do I isolate project dependencies?",
+      "What is environment isolation?"
+    ],
+    "keywords": [
+      "virtual environment",
+      "venv",
+      "isolation",
+      "dependencies",
+      "packages",
+      "project"
+    ],
+    "answer": "A virtual environment is an isolated Python environment for one project. It keeps that project's installed packages separate from other projects and the system installation. Create one with python -m venv .venv, activate it for your operating system, and install the packages required by that project."
+  },
+  {
+    "id": "PY029",
+    "topic": "Pip",
+    "question": "What is pip in Python?",
+    "alternate_questions": [
+      "How do I install a Python package?",
+      "What command installs dependencies?",
+      "Explain pip install"
+    ],
+    "keywords": [
+      "pip",
+      "install",
+      "package",
+      "dependency",
+      "requirements",
+      "python package installer"
+    ],
+    "answer": "pip is a tool commonly used to install and manage Python packages. For example, pip install package_name installs a package into the active Python environment. A requirements file can list project dependencies; install its listed packages with pip install -r requirements.txt."
+  },
+  {
+    "id": "PY030",
+    "topic": "Range",
+    "question": "How does range work in Python?",
+    "alternate_questions": [
+      "How do I generate a sequence of numbers?",
+      "Does range include the ending number?",
+      "Explain start stop step"
+    ],
+    "keywords": [
+      "range",
+      "sequence",
+      "start",
+      "stop",
+      "step",
+      "for loop",
+      "exclusive"
+    ],
+    "answer": "range creates an immutable sequence of integers, often used in loops. range(stop) starts at zero and stops before stop. range(start, stop, step) lets you choose a starting value and increment. For example, list(range(2, 8, 2)) produces [2, 4, 6]; the stop value 8 is not included."
+  },
+  {
+    "id": "PY031",
+    "topic": "Enumerate",
+    "question": "What does enumerate do in Python?",
+    "alternate_questions": [
+      "How do I get an index and value in a loop?",
+      "How can I number items while iterating?",
+      "Explain enumerate start"
+    ],
+    "keywords": [
+      "enumerate",
+      "index",
+      "value",
+      "iteration",
+      "counter",
+      "loop"
+    ],
+    "answer": "enumerate(iterable) produces pairs containing an index and the corresponding item. Example: for index, name in enumerate(names): print(index, name). Use enumerate(names, start=1) when counting should begin at one. It is often clearer than manually increasing a counter."
+  },
+  {
+    "id": "PY032",
+    "topic": "Zip",
+    "question": "What does zip do in Python?",
+    "alternate_questions": [
+      "How do I loop over two lists together?",
+      "How can I combine corresponding items?",
+      "Explain zip iterable"
+    ],
+    "keywords": [
+      "zip",
+      "combine",
+      "parallel",
+      "iterables",
+      "pair",
+      "loop"
+    ],
+    "answer": "zip combines items from multiple iterables position by position. For example, zip(names, marks) yields pairs of a name and a mark. By default it stops when the shortest input is exhausted. Convert it to a list to see all pairs at once, or loop over it to process pairs lazily."
+  },
+  {
+    "id": "PY033",
+    "topic": "Sorting",
+    "question": "How do I sort a list in Python?",
+    "alternate_questions": [
+      "What is the difference between sort and sorted?",
+      "How can I sort numbers or words?",
+      "How do I sort in descending order?"
+    ],
+    "keywords": [
+      "sort",
+      "sorted",
+      "sorting",
+      "ascending",
+      "descending",
+      "reverse",
+      "key"
+    ],
+    "answer": "list.sort() sorts a list in place and returns None. sorted(iterable) creates and returns a new sorted list without changing the original iterable. Use reverse=True for descending order and key=... to provide a function that determines each item's sort key."
+  },
+  {
+    "id": "PY034",
+    "topic": "Map and filter",
+    "question": "What are map and filter in Python?",
+    "alternate_questions": [
+      "How do I transform each item in an iterable?",
+      "How can I keep only matching items?",
+      "Explain map versus filter"
+    ],
+    "keywords": [
+      "map",
+      "filter",
+      "transform",
+      "condition",
+      "iterable",
+      "function"
+    ],
+    "answer": "map(function, iterable) applies a function to each item and returns an iterator of transformed results. filter(function, iterable) keeps items for which the function returns a true value. List comprehensions are often easier to read for simple transformations and filters."
+  },
+  {
+    "id": "PY035",
+    "topic": "Boolean operators",
+    "question": "What are and or and not in Python?",
+    "alternate_questions": [
+      "How do logical operators work?",
+      "How do I combine conditions?",
+      "Explain Boolean logic in Python"
+    ],
+    "keywords": [
+      "and",
+      "or",
+      "not",
+      "boolean",
+      "logical",
+      "condition",
+      "true",
+      "false"
+    ],
+    "answer": "and, or, and not are logical operators. A and B is true when both operands are truthy. A or B is true when at least one operand is truthy. not A reverses the truth value of A. Python short-circuits and/or expressions, so it may not evaluate the second operand when the result is already known."
+  },
+  {
+    "id": "PY036",
+    "topic": "Equality and identity",
+    "question": "What is the difference between == and is in Python?",
+    "alternate_questions": [
+      "How do equality and identity comparisons differ?",
+      "When should I use is None?",
+      "Does is compare memory identity?"
+    ],
+    "keywords": [
+      "==",
+      "is",
+      "equality",
+      "identity",
+      "same object",
+      "value",
+      "none"
+    ],
+    "answer": "== tests whether two objects compare as equal in value. is tests whether two references point to the exact same object. Use == for ordinary value comparison. Use is None to check whether a value is the special None object; do not use is as a general replacement for ==."
+  },
+  {
+    "id": "PY037",
+    "topic": "Type conversion",
+    "question": "How do I convert between Python data types?",
+    "alternate_questions": [
+      "How can I turn text into an integer?",
+      "Explain int float and str conversion",
+      "What is type casting?"
+    ],
+    "keywords": [
+      "type conversion",
+      "casting",
+      "int",
+      "float",
+      "str",
+      "bool",
+      "convert"
+    ],
+    "answer": "Use conversion functions such as int(value), float(value), str(value), and bool(value). For example, int('42') produces 42, while float('3.5') produces 3.5. Conversion can fail when the input text is not valid for the requested type, so handle ValueError when input is uncertain."
+  },
+  {
+    "id": "PY038",
+    "topic": "Comments",
+    "question": "How do I write comments in Python?",
+    "alternate_questions": [
+      "How do I add notes to my code?",
+      "What symbol starts a Python comment?",
+      "Explain inline comments"
+    ],
+    "keywords": [
+      "comment",
+      "hash",
+      "#",
+      "documentation",
+      "readability",
+      "inline"
+    ],
+    "answer": "A # starts a comment that continues to the end of the line. Comments explain intent or important decisions for people reading the code. Use clear names and simple code first; add comments when they provide information that is not obvious from the code itself. Triple-quoted strings are string literals often used as docstrings, not ordinary comment syntax."
+  },
+  {
+    "id": "PY039",
+    "topic": "Docstrings",
+    "question": "What is a docstring in Python?",
+    "alternate_questions": [
+      "How do I document a function?",
+      "What are triple quoted descriptions?",
+      "Explain function documentation strings"
+    ],
+    "keywords": [
+      "docstring",
+      "documentation",
+      "function",
+      "class",
+      "module",
+      "triple quotes"
+    ],
+    "answer": "A docstring is a string literal placed as the first statement in a module, function, class, or method. It documents what that object does and can be accessed through its __doc__ attribute or help(). A common style uses triple double quotes and a concise summary followed by details when needed."
+  },
+  {
+    "id": "PY040",
+    "topic": "Main guard",
+    "question": "What does if __name__ == '__main__' mean?",
+    "alternate_questions": [
+      "Why is the main guard used?",
+      "How can a Python file be run or imported?",
+      "Explain name main"
+    ],
+    "keywords": [
+      "__name__",
+      "__main__",
+      "main guard",
+      "import",
+      "execute",
+      "script"
+    ],
+    "answer": "When a Python file is run directly, Python sets its __name__ variable to '__main__'. When the file is imported as a module, __name__ is set to the module's name. The if __name__ == '__main__': block therefore runs only during direct execution, which is useful for keeping examples or program startup code out of imports."
+  }
+]
